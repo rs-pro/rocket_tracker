@@ -1,5 +1,3 @@
-console.log 'start'
-
 if window.performance && window.performance.timing
   get = (key) ->
     window.performance.timing[key]
@@ -10,7 +8,6 @@ if window.performance && window.performance.timing
     (e - s) / 1000  if s and e
 
   $(window).load ->
-    console.log 'load'
     t = window.performance.timing
     obj = 
       real: time('navigationStart', 'loadEventEnd')
@@ -21,7 +18,6 @@ if window.performance && window.performance.timing
 
     str = ""
     for key of obj
-      console.log key, obj[key]
       str += "&"  unless str is ""
       str += key + "=" + obj[key]
 
