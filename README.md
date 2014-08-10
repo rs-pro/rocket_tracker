@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Create ```config/initializers/rocket_tracker.rb' with data given to you by rtrack:
+Create ```config/initializers/rocket_tracker.rb``` with data given to you by rtrack:
 
     RocketTracker.configure do |c|
       c.api_key = "123"
